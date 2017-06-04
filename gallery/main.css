@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  background-color: coral;
+}
+
+#full {
+  width: 70%;
+  margin: 0 auto;
+  height: 200vh;
+  background-color: floralwhite;
+}
+
+#munifPeds {
+  padding-left: 10px;
+  padding-top: .2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: slateblue;
+  position: relative;
+  z-index: 999;
+  font-weight: 2000;
+  text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  font-size: 1.8em;
+}
+
+#appt {
+  padding-top: .2em;
+  padding-right: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: slateblue;
+  float: right;  
+  position: relative;
+  z-index: 999;
+  font-weight: 500; 
+}
+
+#banner {
+  text-align: center; /*placeholder*/
+  width: 70%;
+  height: 2.6em;
+  margin: 0 auto;
+  padding-top: 0.9em;
+  z-index: 999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  background: url(images/banner.png);
+  background-color: rgba(204, 217, 255, 0.5) ;
+  color: slateblue;
+  position: absolute;
+  font-weight: bold;
+}
+
+#munifPeds a {
+  text-decoration: none;
+  color: slateblue;
+  letter-spacing: 1.2px;
+}
+
+ul {
+  border: 1px solid black;
+  box-shadow: -1px 1px 5px rgba(0, 0, 255, 0.6);
+  width: 21em;
+  position: relative; 
+  background-color: orange;
+  background: rgba(77, 121, 255, 0.5);
+  top: 8em;
+  margin: 0 auto;
+} 
+
+ul#menu li {
+  list-style-type: none;
+  padding: 0 1em;
+  display: inline;
+}
+
+#home, #gallery, #staff {
+  border-right: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu a:hover {
+  color: lightcoral;
+  font-weight: bold;
+}
+
+#fb a:hover {
+  color: blue;
+}
+
+#message {
+  position: relative;
+  top: 8em;
+  text-align: center;
+  font-size: 20px;
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#panel {
+  margin: 0 auto;
+  height: 80vh;
+  width: 80%;
+  position: relative;
+  top: 11em;
+  border: 4px groove coral;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  position: relative;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width:1050px) {
+  
+  html {
+    width: 100%;
+  }
+  #banner {
+    width: 100%;
+  }
+  
+  #full {
+    width: 100%;
+  }
+  
+  #panel {
+    height: 150vh;
+  }
+}

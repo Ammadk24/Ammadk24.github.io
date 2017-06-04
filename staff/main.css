@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color:coral;
+}
+
+#full {
+  width: 70%;
+  margin: 0 auto;
+  height: 170vh;
+  background-color: floralwhite;
+}
+#munifPeds {
+  padding-left: 10px;
+  padding-top: .2em;
+  padding-right: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: slateblue;
+  position: relative;
+  z-index: 999;
+  text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  font-size: 1.8em;
+}
+
+#appt {
+  padding-top: .2em;
+  padding-right: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: slateblue;
+  float: right;  
+  position: relative;
+  z-index: 999;
+  font-weight: 500
+}
+
+#banner {
+  text-align: center; /*placeholder*/
+  width: 70%;
+  height: 150px;
+  margin: 0 auto;
+  padding-top: 1.2em;
+  position: absolute;
+  z-index: 999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  background-color: rgba(204, 217, 255, 0.5) ;
+  color: slateblue;
+  font-weight: bold;
+}
+
+#munifPeds a {
+  text-decoration: none;
+  color: slateblue;
+  letter-spacing: 1.2px;
+}
+
+ul {
+  border: 1px solid black;
+  box-shadow: -1px 1px 5px rgba(0, 0, 255, 0.6);
+  width: 21em;
+  position: relative; 
+  background-color: orange;
+  background: rgba(77, 121, 255, 0.5);
+  top: 8em;
+  margin: 0 auto;
+} 
+
+ul#menu li {
+  list-style-type: none;
+  padding: 0 1em;
+  display: inline;
+  /border-right: 1px solid black
+}
+
+#home, #gallery, #staff {
+  border-right: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu a:hover {
+  color: lightcoral;
+  font-weight: bold;
+}
+
+#fb a:hover {
+  color: blue;
+}
+
+#drMunif, #nurse1, #nurse2, #nurse3 {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  position: relative;
+  top: 7em;
+}
+
+#drMunif img, #nurse1 img, #nurse2 img, #nurse3 img{
+  height: 12em;
+  width: 13em;  
+}
+
+#nurse1, #nurse2, #nurse3{
+  width: 30%;
+  float:left;
+  margin-left: 1em;
+}
+
+#drMunif h2, #nurse1 h2, #nurse2 h2, #nurse3 h2 {
+  margin-bottom: 0.5em
+}
+
+@media screen and (max-width:1200px) {
+  
+  #appt, #walk-ins {
+    font-size: 1.3em;
+  }
+  
+  #banner {
+    width: 100%;
+  }
+  
+  #full {
+    width: 100%;
+    height: 240vh;
+  }
+  
+  #nurse1, #nurse2, #nurse3 {
+    width: auto;
+    margin-left:0;
+  }
+  
+}
